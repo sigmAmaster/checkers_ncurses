@@ -51,8 +51,8 @@ add_library(
 
 add_executable(checkers src/main.cpp)
 
-set_property(TARGET ncurses PROPERTY IMPORTED_LOCATION /usr/lib/x86_64-linux-gnu/libncurses.so)
-set_property(TARGET thread PROPERTY IMPORTED_LOCATION  /usr/lib/x86_64-linux-gnu/libpthread.so)
+set_property(TARGET ncurses PROPERTY IMPORTED_LOCATION /usr/lib/x86_64-linux-gnu/libncurses.so) // library path
+set_property(TARGET thread PROPERTY IMPORTED_LOCATION  /usr/lib/x86_64-linux-gnu/libpthread.so) // library path
 
 target_link_libraries(checkers PRIVATE AI UI label piece board ncurses thread)
 
