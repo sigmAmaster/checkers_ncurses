@@ -1,5 +1,7 @@
 # checkers_ncurses
 
+this checkers game write with ncurses, this game can support mouse event. 
+
 you can compile with this command in src directory
 
 // clang++ -pthread -lncurses *.cpp -o testclang++ -pthread -lncurses *.cpp -o test // compile command
